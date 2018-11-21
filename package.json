@@ -1,0 +1,26 @@
+{
+  "name": "alexis",
+  "version": "0.3.3",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "alfathdirk",
+  "license": "MIT",
+  "dependencies": {
+    "image-size": "^0.6.3",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-config-xinix": "^1.1.2",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0"
+  }
+}

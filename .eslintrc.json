@@ -1,0 +1,15 @@
+{
+  "extends": "standard",
+  "plugins": [
+    "standard",
+    "promise"
+  ],
+  "rules": {
+    "semi": ["error", "always"],
+    "comma-dangle": ["error", "always-multiline"],
+    "no-var": ["error"],
+    "no-console": ["error", { "allow": ["info", "warn", "error"] }],
+    "require-await": ["error"],
+    "camelcase": "off"
+  }
+}
