@@ -7,6 +7,7 @@ module.exports = {
     storyByUserId: (userId) => `graphql/query/?query_id=17873473675158481&variables=%7B%22reel_ids%22%3A%5B%22${userId}%22%5D%2C%22precomposed_overlay%22%3Afalse%7D`,
     pagingMedia: (userId, nextCursor) => `graphql/query/?query_id=17888483320059182&variables=%7B%22id%22%3A%22${userId}%22%2C%22first%22%3A12%2C%22after%22%3A%22${nextCursor}%22%7D`,
     likeMedia: (id) => `web/likes/${id}/like/`,
+    fetchFollower: (userId, nextCursor) => `graphql/query/?query_hash=56066f031e6239f35a904ac20c9f37d9&variables=%7B%22id%22%3A%22${userId}%22%2C%22include_reel%22%3Atrue%2C%22fetch_mutual%22%3Atrue%2C%22first%22%3A${nextCursor === '' ? 24 : 12}${nextCursor}%7D`,
     commentMedia: (id) => `web/comments/${id}/add/`,
     storyTimeline: 'graphql/query/?query_hash=60b755363b5c230111347a7a4e242001&variables=%7B%22only_stories%22%3Atrue%7D',
     storySeen: 'stories/reel/seen',
