@@ -1,14 +1,15 @@
 const Ig = require('../main');
-let ig = new Ig();
+const user = require('../user.json');
+let ig = new Ig(user);
 
 const TIMEOUT = 6000; // 6 seconds;
 
-const username = 'username';
-const password = 'password';
+// const username = 'username';
+// const password = 'password';
 
 async function doLike () {
   try {
-    await ig.login(username, password);
+    // await ig.login(username, password);
     let medias = await ig.getTimeLineFeed();
     medias.map(async ({ node }) => {
       let now = new Date().getTime();
